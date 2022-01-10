@@ -5,3 +5,11 @@
 5. list all git commits -> git log --reflog
 6. if a submodule is present in a git repo, the parent repo doesn't keep the submodule(s)' actual files
    to download them, run ``` git submodule update --init --recursive 
+   OR
+   git clone --recurse-submodules {url}
+7. filtering your commit history:
+   a. by date: git log --after="2017-01-01" --before="2017-01-09"
+   b. by keyword(s): git log --grep="refactor"
+   c. by author: git log --author="Hope"
+   d. by file: git log -- {filename}
+   e. commits in a different branch: git log current_branch..other_branch
