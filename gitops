@@ -1,3 +1,7 @@
 1. commit to a wrong branch? -> cherrypick
 2. change commit message? -> interactive rebase
 3. squash 2 or more commits into one? -> interactive rebase
+4. reset to a previous commit -> git reset --hard HEAD~[number]
+5. list all git commits -> git log --reflog
+6. if a submodule is present in a git repo, the parent repo doesn't keep the submodule(s)' actual files
+   to download them, run ``` git submodule update --init --recursive 
